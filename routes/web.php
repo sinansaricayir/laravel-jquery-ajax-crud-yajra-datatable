@@ -15,3 +15,4 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/categories/create', [CategoryController::class, 'create']);
+Route::post('/categories/store', [CategoryController::class, 'store'])->name('categories.store');
